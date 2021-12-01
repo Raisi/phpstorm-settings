@@ -1,0 +1,13 @@
+<application>
+  <component name="DependencyUISettings">
+    <option name="UI_SHOW_FILES" value="false" />
+  </component>
+  <component name="UISettings">
+    <option name="EDITOR_TAB_LIMIT" value="20" />
+    <option name="EDITOR_TAB_PLACEMENT" value="2" />
+    <option name="IDE_AA_TYPE" value="Greyscale" />
+    <option name="MARK_MODIFIED_TABS_WITH_ASTERISK" value="true" />
+    <option name="MAX_LOOKUP_LIST_HEIGHT" value="5" />
+    <option name="SHOW_INPLACE_COMMENTS" value="true" />
+  </component>
+</application>

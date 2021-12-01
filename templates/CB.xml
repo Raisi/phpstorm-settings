@@ -1,0 +1,173 @@
+<templateSet group="CB">
+  <template name="//" value="// $END$&#10;//--------------------------------------------------" description="CSS - Short Comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="/**" value="/*******************************************************************************&#10; *&#10; * $END$&#10; *&#10; ******************************************************************************/" description="CSS - File Comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="//=" value="/*------------------------------------------------------*\&#10;     $END$&#10;\*------------------------------------------------------*/" description="CSS - Section Comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="/*" value="/**&#10; * $END$&#10; **/" description="CSS - Block Comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="///" value="{{-------------------------------- $END$ --------------------------------}}" description="Blade - Line Comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="&lt;." value="&lt;!-- /.$END$ --&gt;" description="HTML - Comment Closing Tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="cl" value="console.log($END$);" description="JS - Console Log" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="inc" value="@include $VAR1$($VAR2$) $END$" description="Include Mixin" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="[]" value="'$VAR1$' =&gt; [$END$]," description="Php 5 Array" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="in" value="@include $VAR1$($VAR2$) $END$" description="Include Mixin" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="mi" value="@mixin $VAR1$($VAR2$) {&#10;    $END$&#10;}" description="Mixin Definition" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="&lt;?" value="&lt;?php $END$?&gt;" description="PHP Tag" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="=&gt;" value="'$VAR1$' =&gt; $END$" description="PHP Array Entry" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="comp" value="/*&#10; * Name: $NAME$&#10; * Author: Rainer Angerer&#10; **/&#10; &#10; 'use strict';&#10; &#10;class $NAME$ extends HTMLElement {&#10;    createdCallback() {&#10;    &#10;    }&#10;    &#10;    attachedCallback() {&#10;    &#10;    }&#10;    &#10;    detachedCallback() {&#10;    &#10;    }&#10;}&#10;&#10;document.registerElement('$END$', $NAME$);" description="Custom Component JS" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="vtmpl" value="&lt;template&gt;&#10;    &lt;div&gt;&#10;        &#10;    &lt;/div&gt;&#10;&lt;/template&gt;  &#10;&#10;&lt;script&gt;&#10;    import {ref} from '@vue/composition-api'&#10;    &#10;    export default {&#10;        name: '$END$'&#10;    };&#10;    &#10;&lt;/script&gt;&#10;" description="Vue Component Template" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vtest" value="/* eslint import/no-unresolved: 0 */&#10;&#10;import { shallowMount } from '@vue/test-utils';&#10;import $NAME$ from '@/components/$NAME$.vue';&#10;&#10;&#10;describe('$NAME$', () =&gt; {&#10;    let wrapper;&#10;&#10;    beforeEach(() =&gt; {&#10;        wrapper = shallowMount($NAME$);&#10;    });&#10;    $END$&#10;});" description="Vue Component Text Scaffold" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imtree" value="import { $END$ } from '$VAR1$';" description="Treeshaking import" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="e2e" value="describe('$NAME$', () =&gt; {&#10;    const ENV = Cypress.env();&#10;&#10;    beforeEach(() =&gt; {&#10;        cy.visit(`${ENV.host}`);&#10;    });&#10;    &#10;    $END$&#10;});&#10;" description="E2E Cypress Test Bootstrap" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="immmap" value="import { mapGetters, mapActions } from 'vuex';" description="Import Vuex Methods" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="vuexmodule" value="import { createNamespacedHelpers } from 'vuex'&#10;const { mapGetters, mapActions } = createNamespacedHelpers('$END$')" description="Import helpers when using namespaced Modules" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ed" value="export default $END$;" description="Export default" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="obfa" value="const $NAME$ = () =&gt; {&#10;    $END$&#10;    return Object.freeze({&#10;    &#10;    });&#10;}&#10;&#10;export default $NAME$;" description="Object Factory" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="exd" value="export default $END$;" description="Export default" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="im{" value="import { $END$ } from '$VAR1$';" description="Treeshaking import" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ex{" value="export { $END$ };" description="export treeshak0rd" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="Vue" value="true" />
+    </context>
+  </template>
+  <template name="extree" value="export { $END$ };" description="export treeshak0rd" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="self" value="$self: &amp;;&#10;$END$" description="Self Scope Variable" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="root" value="$root: &amp;;&#10;$END$" description="Self Scope Root Variable" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="purgestart" value="/*! purgecss start ignore */" description="Purge Css Start" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="purgeend" value="/*! purgecss end ignore */" description="Purge Css Start" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="noimp" value="// noinspection ES6UnusedImports" shortcut="TAB" description="no import optimize" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="Vue" value="true" />
+    </context>
+  </template>
+</templateSet>

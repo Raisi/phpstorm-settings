@@ -1,0 +1,22 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9bd365fd-d727-4ff8-aa72-4d85c6087e01" name="initiative-mittelstand.at" url="http://initiative-mittelstand.at">
+        <fileTransfer host="initiative-mittelstand.at" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="cd27024a-bf67-4d53-bc3d-939c4bb6e392" name="Kurz" url="http://wp11144026.server-he.de">
+        <fileTransfer host="wp11144026.server-he.de" port="21" rootFolder="/kurz-v2-2013">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
