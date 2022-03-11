@@ -78,7 +78,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="vtmpl" value="&lt;template&gt;&#10;    &lt;div&gt;&#10;        &#10;    &lt;/div&gt;&#10;&lt;/template&gt;  &#10;&#10;&lt;script&gt;&#10;    import {ref} from '@vue/composition-api'&#10;    &#10;    export default {&#10;        name: '$END$'&#10;    };&#10;    &#10;&lt;/script&gt;&#10;" description="Vue Component Template" toReformat="true" toShortenFQNames="true">
+  <template name="vtmpl" value="&lt;script&gt;&#10;export default {&#10;  name: '$END$'&#10;};&#10;&#10;&lt;/script&gt;&#10;&#10;&lt;script setup&gt;&#10;// noinspection ES6UnusedImports&#10;&#10;&lt;/script&gt;&#10;&#10;&lt;template&gt;&#10;  &lt;div&gt;&#10;    Koal&#10;  &lt;/div&gt;&#10;&lt;/template&gt;&#10;&#10;&lt;style lang=&quot;scss&quot;&gt;&#10;&#10;&lt;/style&gt;&#10;" description="Vue Component Template" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
